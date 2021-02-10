@@ -19,3 +19,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post("/createTestdata","App\Http\Controllers\TestdataController@createTestdata");
+// Route::post("/createAffe","App\Http\Controllers\AffeController@createAffe");
+Route::get("/getAll", "App\Http\Controllers\TestController@getAll");
+Route::get("/getAll2", "App\Http\Controllers\AffeController@getAll");
+
+Route::get("with", "App\Http\Controllers\KundeController@withRelations");
+Route::get("with", "App\Http\Controllers\MitgliedschaftController@withRelations");
+Route::get("with", "App\Http\Controllers\BestellungController@withRelations");
+Route::get("with", "App\Http\Controllers\ArtikelController@withRelations");
+Route::get("with", "App\Http\Controllers\LagerController@withRelations");
+

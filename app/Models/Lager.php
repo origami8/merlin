@@ -5,11 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Testdata extends Model
+class Lager extends Model
 {
     use HasFactory;
 
     protected $fillable =[
-        "someAttribute","someInteger"
+        "LNr", "Gang", "Regal", "Fach", "Bestand", "ANr"
     ];
+
+    public function Artikels(){
+        return $this->belongsTo(Artikel::class);
+    }
 }
