@@ -15,6 +15,7 @@ class AffeController extends Controller
     public function createAffe(Request $request){
 
         $data = $request->validate([
+            "id"=> "",
             "one_to_ten" => "numeric",
             "yes_no" => "boolean",
             "firstname" => "",

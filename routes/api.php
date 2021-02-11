@@ -2,6 +2,12 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AffeController;
+use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\KundeController;
+use App\Http\Controllers\BestellungController;
+use App\Http\Controllers\LagerController;
+use App\Http\Controllers\MitgliedschaftController;
 
 /*
 |--------------------------------------------------------------------------

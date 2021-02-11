@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Affe;
+use App\Http\Controllers\AffeController;
 use Illuminate\Database\Seeder;
 
 class AffeSeeder extends Seeder
@@ -13,6 +15,6 @@ class AffeSeeder extends Seeder
      */
     public function run()
     {
-        Affe::create(['one_to_ten'=>'7'], ['yes_no'=>'1'], ['firstname'=>'lili'], ['lastname'=>'deng'] );
+        Affe::create(['id'=> 4, 'one_to_ten'=>'7', 'yes_no'=> true, 'firstname'=>'lili', 'lastname'=>'deng'] );
     }
 }

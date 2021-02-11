@@ -10,8 +10,7 @@ class Affe extends Model
     use HasFactory;
 
     protected $fillable =[
-    "one_to_ten","yes_no", "fistname", "lastname"
+    "one_to_ten", "yes_no", "firstname", "lastname"
 ];
-
 
 }
