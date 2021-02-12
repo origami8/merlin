@@ -22,10 +22,4 @@ class KundeController extends Controller
         $kunde = Kunde::create($data);
         return response($kunde,200);
     }
-
-    public function withRelations(){
-        $kunde = Kunde::with('Mitgliedschaft', 'Bestellung')
-            ->get();
-        return response($kunde, 200);
-    }
 }

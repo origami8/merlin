@@ -14,10 +14,7 @@ class Artikel extends Model
     ];
 
     public function Bestellungs(){
-        return $this->belongsToMany(Bestellung::class);
+        return $this->belongsTo(Bestellung::class);
     }
 
-    public function Lagers(){
-        return $this->hasMany(Lager::class);
-    }
 }

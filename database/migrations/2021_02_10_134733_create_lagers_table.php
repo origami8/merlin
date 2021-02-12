@@ -16,8 +16,8 @@ class CreateLagersTable extends Migration
         Schema::create('lagers', function (Blueprint $table) {
             $table->id("LNr");
             $table->timestamps();
-            $table->BigInteger('artkels_id')->unsigned();
-            $table->foreign('artkels_id')->references('ANr')->on('artikels');
+            $table->BigInteger('artikels_id')->unsigned();
+            $table->foreign('artikels_id')->references('ANr')->on('artikels');
             $table->integer("Gang");
             $table->integer("Regal");
             $table->integer("Fach");

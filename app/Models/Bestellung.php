@@ -10,7 +10,7 @@ class Bestellung extends Model
     use HasFactory;
 
     protected $fillable =[
-        "Anzahl", "Gesamtpreis", "Bezahlt", "KNr", "ANr"
+        "Anzahl", "Gesamtpreis", "Bezahlt"
     ];
 
     public function Kundes(){
@@ -18,6 +18,6 @@ class Bestellung extends Model
     }
 
     public function Artikels(){
-        return $this->hasMany(Artikel::class);
+        return $this->belongsTo(Artikel::class);
     }
 }

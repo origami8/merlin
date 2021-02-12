@@ -12,12 +12,4 @@ class Kunde extends Model
     protected $fillable =[
         "Vorname", "Nachname", "Strasse", "PLZ", "Ort", "Email", "Telefon", "GebDat"
     ];
-
-    public function Bestellungs(){
-        return $this->hasMany(Bestellung::class);
-    }
-
-    public function Mitgliedschafts(){
-        return $this->hasMany(Mitgliedschaft::class);
-    }
 }

@@ -10,7 +10,7 @@ class Lager extends Model
     use HasFactory;
 
     protected $fillable =[
-        "Gang", "Regal", "Fach", "Bestand", "ANr"
+        "Gang", "Regal", "Fach", "Bestand"
     ];
 
     public function Artikels(){
