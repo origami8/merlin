@@ -10,7 +10,6 @@ class LagerController extends Controller
     public function createLager(Request $request){
 
         $data = $request->validate([
-            "LNr" => "numeric",
             "Gang" => "numeric",
             "Regal" => "numeric",
             "Fach" => "numeric",

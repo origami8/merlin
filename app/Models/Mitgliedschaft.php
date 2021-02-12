@@ -10,7 +10,7 @@ class Mitgliedschaft extends Model
     use HasFactory;
 
     protected $fillable =[
-        "MNr", "Rabattaktion", "Bindung", "Lafzeit", "KNr"
+        "Rabattaktion", "Bindung", "Lafzeit", "KNr"
     ];
 
     public function Kundes(){

@@ -22,6 +22,7 @@ class CreateBestellungsTable extends Migration
             $table->foreign('artikels_id')->references('ANr')->on('artikels');
             $table->integer("Anzahl");
             $table->double("Gesamtpreis");
+            $table->boolean("Bezahlt");
         });
     }
 

@@ -10,7 +10,7 @@ class Artikel extends Model
     use HasFactory;
 
     protected $fillable =[
-        "ANr", "Name", "Hersteller", "Kategorie", "Preis"
+        "Name", "Hersteller", "Kategorie", "Preis"
     ];
 
     public function Bestellungs(){

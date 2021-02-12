@@ -10,7 +10,7 @@ class Bestellung extends Model
     use HasFactory;
 
     protected $fillable =[
-        "BNr", "Anzahl", "Gesamtpreis", "KNr", "ANr"
+        "Anzahl", "Gesamtpreis", "Bezahlt", "KNr", "ANr"
     ];
 
     public function Kundes(){

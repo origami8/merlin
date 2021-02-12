@@ -10,7 +10,6 @@ class KundeController extends Controller
     public function createKunde(Request $request){
 
         $data = $request->validate([
-            "KNr" => "numeric",
             "Vorname" => "",
             "Nachname" => "",
             "Strasse" => "",

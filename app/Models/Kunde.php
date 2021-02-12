@@ -10,7 +10,7 @@ class Kunde extends Model
     use HasFactory;
 
     protected $fillable =[
-        "KNr", "Vorname", "Nachname", "Strasse", "PLZ", "Ort", "Email", "Telefon", "GebDat"
+        "Vorname", "Nachname", "Strasse", "PLZ", "Ort", "Email", "Telefon", "GebDat"
     ];
 
     public function Bestellungs(){

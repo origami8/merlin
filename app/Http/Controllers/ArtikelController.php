@@ -10,7 +10,6 @@ class ArtikelController extends Controller
     public function createArtikel(Request $request){
 
         $data = $request->validate([
-            "ANr" => "numeric",
             "Name" => "",
             "Hersteller" => "",
             "Kategorie" => "numeric",

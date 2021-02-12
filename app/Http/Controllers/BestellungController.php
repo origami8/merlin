@@ -10,9 +10,9 @@ class BestellungController extends Controller
     public function createBestellung(Request $request){
 
         $data = $request->validate([
-            "BNr" => "numeric",
             "Anzahl" => "numeric",
-            "Gesamtpreis" => "numeric"
+            "Gesamtpreis" => "numeric",
+            "Bezahlt" => "boolean"
         ]);
         $bestellung = Bestellung::create($data);
         return response($bestellung,200);

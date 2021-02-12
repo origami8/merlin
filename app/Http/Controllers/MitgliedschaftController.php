@@ -10,7 +10,6 @@ class MitgliedschaftController extends Controller
     public function createMitgliedschaft(Request $request){
 
         $data = $request->validate([
-            "MNr" => "numeric",
             "Rabattaktion" => "",
             "Bindung" => "",
             "Laufzeit" => "numeric"
