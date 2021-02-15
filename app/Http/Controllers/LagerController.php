@@ -7,6 +7,11 @@ use App\Models\Lager;
 
 class LagerController extends Controller
 {
+    function getAll(){
+        $data = Lager::all();
+        return response($data, 200);
+    }
+
     public function createLager(Request $request){
 
         $data = $request->validate([

@@ -26,8 +26,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post("/createTestdata","App\Http\Controllers\TestdataController@createTestdata");
 // Route::post("/createAffe","App\Http\Controllers\AffeController@createAffe");
+// Route::post("/createUa","App\Http\Controllers\UaController@createUa");
+// Route::post("/createUb","App\Http\Controllers\UbController@createUb");
+
 Route::get("/getAll", "App\Http\Controllers\TestController@getAll");
 Route::get("/getAll2", "App\Http\Controllers\AffeController@getAll");
+Route::get("/getAllUa", "App\Http\Controllers\UaController@getAll");
+Route::get("/getAllUb", "App\Http\Controllers\UbController@getAll");
 
 Route::get("with", "App\Http\Controllers\KundeController@withRelations");
 Route::get("with", "App\Http\Controllers\MitgliedschaftController@withRelations");

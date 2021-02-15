@@ -7,6 +7,11 @@ use App\Models\Bestellung;
 
 class BestellungController extends Controller
 {
+    function getAll(){
+        $data = Bestellung::all();
+        return response($data, 200);
+    }
+
     public function createBestellung(Request $request){
 
         $data = $request->validate([

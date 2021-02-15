@@ -7,6 +7,11 @@ use App\Models\Artikel;
 
 class ArtikelController extends Controller
 {
+    function getAll(){
+        $data = Artikel::all();
+        return response($data, 200);
+    }
+
     public function createArtikel(Request $request){
 
         $data = $request->validate([

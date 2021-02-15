@@ -7,6 +7,11 @@ use App\Models\Mitgliedschaft;
 
 class MitgliedschaftController extends Controller
 {
+    function getAll(){
+        $data = Mitgliedschaft::all();
+        return response($data, 200);
+    }
+
     public function createMitgliedschaft(Request $request){
 
         $data = $request->validate([
